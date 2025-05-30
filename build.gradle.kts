@@ -57,8 +57,8 @@ rootProject.allprojects.forEach { currentProject ->
     }
 
     currentProject.dependencies {
-        testImplementation(libs.hamcrest)
-        testImplementation(libs.junit.jupiter)
+        testImplementation(aoc2017Libs.hamcrest)
+        testImplementation(aoc2017Libs.junit.jupiter)
     }
 
     currentProject.jacoco {
