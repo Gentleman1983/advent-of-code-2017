@@ -5,8 +5,8 @@ import org.sonarqube.gradle.SonarTask
 plugins {
     id("jacoco-report-aggregation")
     id("java-library")
-    alias(libs.plugins.kotlin.jvm) apply false
-    alias(libs.plugins.sonarqube.plugin)
+    alias(aoc2017Libs.plugins.kotlin.jvm) apply false
+    alias(aoc2017Libs.plugins.sonarqube.plugin)
 }
 
 dependencies {
