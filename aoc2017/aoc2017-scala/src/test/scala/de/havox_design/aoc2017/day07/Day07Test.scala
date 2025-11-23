@@ -1,6 +1,6 @@
 package de.havox_design.aoc2017.day07
 
-import RecursiveCircus._
+import RecursiveCircusScala._
 import org.scalatest.funsuite.AnyFunSuite
 
 class Day07Test extends AnyFunSuite {

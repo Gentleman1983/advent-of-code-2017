@@ -1,6 +1,6 @@
 package de.havox_design.aoc2017.day10
 
-import KnotHash._
+import KnotHashScala._
 import org.scalatest.funsuite.AnyFunSuite
 
 class Day10Test extends AnyFunSuite {

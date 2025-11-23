@@ -1,6 +1,6 @@
 package de.havox_design.aoc2017.day04
 
-import HighEntropyPassphrases._
+import HighEntropyPassphrasesScala._
 import org.scalatest.funsuite.AnyFunSuite
 
 class Day04Test extends AnyFunSuite {

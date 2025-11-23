@@ -1,6 +1,6 @@
 package de.havox_design.aoc2017.day08
 
-import IHeardYouLikeRegisters._
+import IHeardYouLikeRegistersScala._
 import org.scalatest.funsuite.AnyFunSuite
 
 class Day08Test extends AnyFunSuite {

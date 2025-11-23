@@ -1,6 +1,6 @@
 package de.havox_design.aoc2017.day06
 
-import MemoryReallocation._
+import MemoryReallocationScala._
 import org.scalatest.funsuite.AnyFunSuite
 
 class Day06Test extends AnyFunSuite {

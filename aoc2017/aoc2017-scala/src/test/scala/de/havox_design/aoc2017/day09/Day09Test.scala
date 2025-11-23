@@ -1,6 +1,6 @@
 package de.havox_design.aoc2017.day09
 
-import StreamProcessing._
+import StreamProcessingScala._
 import org.scalatest.funsuite.AnyFunSuite
 
 class Day09Test extends AnyFunSuite {

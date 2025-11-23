@@ -1,6 +1,6 @@
 package de.havox_design.aoc2017.day05
 
-import AMazeOfTwistyTrampolinesAllAlike._
+import AMazeOfTwistyTrampolinesAllAlikeScala._
 import org.scalatest.funsuite.AnyFunSuite
 
 class Day05Test extends AnyFunSuite {

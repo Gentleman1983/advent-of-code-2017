@@ -1,6 +1,6 @@
 package de.havox_design.aoc2017.day14
 
-import DiskDefragmentation._
+import DiskDefragmentationScala._
 import org.scalatest.funsuite.AnyFunSuite
 
 class Day14Test extends AnyFunSuite {
