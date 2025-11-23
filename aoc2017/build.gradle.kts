@@ -7,6 +7,7 @@ val year = 2017
 dependencies {
     api(project(":aoc${year}:aoc${year}-java"))
     api(project(":aoc${year}:aoc${year}-kotlin"))
+    api(project(":aoc${year}:aoc${year}-scala"))
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")

@@ -5,16 +5,24 @@ import de.havox_design.aoc2017.day01.InverseCaptcha
 import de.havox_design.aoc2017.day02.CorruptionChecksum
 import de.havox_design.aoc2017.day03.SpiralMemory
 import de.havox_design.aoc2017.day04.HighEntropyPassphrases
+import de.havox_design.aoc2017.day04.HighEntropyPassphrasesScala
 import de.havox_design.aoc2017.day05.AMazeOfTwistyTrampolinesAllAlike
+import de.havox_design.aoc2017.day05.AMazeOfTwistyTrampolinesAllAlikeScala
 import de.havox_design.aoc2017.day06.MemoryReallocation
+import de.havox_design.aoc2017.day06.MemoryReallocationScala
 import de.havox_design.aoc2017.day07.RecursiveCircus
+import de.havox_design.aoc2017.day07.RecursiveCircusScala
 import de.havox_design.aoc2017.day08.IHeardYouLikeRegisters
+import de.havox_design.aoc2017.day08.IHeardYouLikeRegistersScala
 import de.havox_design.aoc2017.day09.StreamProcessing
+import de.havox_design.aoc2017.day09.StreamProcessingScala
 import de.havox_design.aoc2017.day10.KnotHash
+import de.havox_design.aoc2017.day10.KnotHashScala
 import de.havox_design.aoc2017.day11.HexEd
 import de.havox_design.aoc2017.day12.DigitalPlumber
 import de.havox_design.aoc2017.day13.PacketScanners
 import de.havox_design.aoc2017.day14.DiskDefragmentation
+import de.havox_design.aoc2017.day14.DiskDefragmentationScala
 import de.havox_design.aoc2017.day15.DuelingGenerators
 import de.havox_design.aoc2017.day16.PermutationPromenade
 import de.havox_design.aoc2017.day17.SpinLock
@@ -65,8 +73,8 @@ class MainClass: AocMainClassHelper {
         day = 4
         day(
             getDayString(day),
-            HighEntropyPassphrases(getFileName(day))::processPart1,
-            HighEntropyPassphrases(getFileName(day))::processPart2,
+            this::highEntropyPassphrasesPart1,
+            this::highEntropyPassphrasesPart2,
             daysSelected,
             args
         )
@@ -74,8 +82,8 @@ class MainClass: AocMainClassHelper {
         day = 5
         day(
             getDayString(day),
-            AMazeOfTwistyTrampolinesAllAlike(getFileName(day))::processPart1,
-            AMazeOfTwistyTrampolinesAllAlike(getFileName(day))::processPart2,
+            this::amazeOfTwistyTrampolinesPart1,
+            this::amazeOfTwistyTrampolinesPart2,
             daysSelected,
             args
         )
@@ -83,8 +91,8 @@ class MainClass: AocMainClassHelper {
         day = 6
         day(
             getDayString(day),
-            MemoryReallocation(getFileName(day))::processPart1,
-            MemoryReallocation(getFileName(day))::processPart2,
+            this::memoryReallocationPart1,
+            this::memoryReallocationPart2,
             daysSelected,
             args
         )
@@ -92,8 +100,8 @@ class MainClass: AocMainClassHelper {
         day = 7
         day(
             getDayString(day),
-            RecursiveCircus(getFileName(day))::processPart1,
-            RecursiveCircus(getFileName(day))::processPart2,
+            this::recursiveCircusPart1,
+            this::recursiveCircusPart2,
             daysSelected,
             args
         )
@@ -101,8 +109,8 @@ class MainClass: AocMainClassHelper {
         day = 8
         day(
             getDayString(day),
-            IHeardYouLikeRegisters(getFileName(day))::processPart1,
-            IHeardYouLikeRegisters(getFileName(day))::processPart2,
+            this::iHeardYouLikeRegistersPart1,
+            this::iHeardYouLikeRegistersPart2,
             daysSelected,
             args
         )
@@ -110,8 +118,8 @@ class MainClass: AocMainClassHelper {
         day = 9
         day(
             getDayString(day),
-            StreamProcessing(getFileName(day))::processPart1,
-            StreamProcessing(getFileName(day))::processPart2,
+            this::streamProcessingPart1,
+            this::streamProcessingPart2,
             daysSelected,
             args
         )
@@ -119,8 +127,8 @@ class MainClass: AocMainClassHelper {
         day = 10
         day(
             getDayString(day),
-            KnotHash(getFileName(day))::processPart1,
-            KnotHash(getFileName(day))::processPart2,
+            this::knotHashPart1,
+            this::knotHashPart2,
             daysSelected,
             args
         )
@@ -155,8 +163,8 @@ class MainClass: AocMainClassHelper {
         day = 14
         day(
             getDayString(day),
-            DiskDefragmentation(getFileName(day))::processPart1,
-            DiskDefragmentation(getFileName(day))::processPart2,
+            this::diskDefragmentationPart1,
+            this::diskDefragmentationPart2,
             daysSelected,
             args
         )
@@ -259,6 +267,246 @@ class MainClass: AocMainClassHelper {
             daysSelected,
             args
         )
+    }
+
+    private fun highEntropyPassphrasesPart1(): String {
+        val filename = getFileName(4)
+        val result = StringBuilder()
+        val kotlinvalue = HighEntropyPassphrases(filename)::processPart1
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(HighEntropyPassphrasesScala.solvePart1(filename).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun highEntropyPassphrasesPart2(): String {
+        val filename = getFileName(4)
+        val result = StringBuilder()
+        val kotlinvalue = HighEntropyPassphrases(filename)::processPart2
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(HighEntropyPassphrasesScala.solvePart2(filename).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun amazeOfTwistyTrampolinesPart1(): String {
+        val filename = getFileName(5)
+        val result = StringBuilder()
+        val kotlinvalue = AMazeOfTwistyTrampolinesAllAlike(filename)::processPart1
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(AMazeOfTwistyTrampolinesAllAlikeScala.solvePart1(filename).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun amazeOfTwistyTrampolinesPart2(): String {
+        val filename = getFileName(5)
+        val result = StringBuilder()
+        val kotlinvalue = AMazeOfTwistyTrampolinesAllAlike(filename)::processPart2
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(AMazeOfTwistyTrampolinesAllAlikeScala.solvePart2(filename).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun memoryReallocationPart1(): String {
+        val filename = getFileName(6)
+        val result = StringBuilder()
+        val kotlinvalue = MemoryReallocation(filename)::processPart1
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(MemoryReallocationScala.solvePart2(filename).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun memoryReallocationPart2(): String {
+        val filename = getFileName(6)
+        val result = StringBuilder()
+        val kotlinvalue = MemoryReallocation(filename)::processPart2
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(MemoryReallocationScala.solvePart2(filename).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun recursiveCircusPart1(): String {
+        val filename = getFileName(7)
+        val result = StringBuilder()
+        val kotlinvalue = RecursiveCircus(filename)::processPart1
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(RecursiveCircusScala.solvePart1(filename).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun recursiveCircusPart2(): String {
+        val filename = getFileName(7)
+        val result = StringBuilder()
+        val kotlinvalue = RecursiveCircus(filename)::processPart2
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(RecursiveCircusScala.solvePart2(filename).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun iHeardYouLikeRegistersPart1(): String {
+        val filename = getFileName(8)
+        val result = StringBuilder()
+        val kotlinvalue = IHeardYouLikeRegisters(filename)::processPart1
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(IHeardYouLikeRegistersScala.solvePart1(filename).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun iHeardYouLikeRegistersPart2(): String {
+        val filename = getFileName(8)
+        val result = StringBuilder()
+        val kotlinvalue = IHeardYouLikeRegisters(filename)::processPart2
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(IHeardYouLikeRegistersScala.solvePart2(filename).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun streamProcessingPart1(): String {
+        val filename = getFileName(9)
+        val result = StringBuilder()
+        val kotlinvalue = StreamProcessing(filename)::processPart1
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(StreamProcessingScala.solvePart1(filename).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun streamProcessingPart2(): String {
+        val filename = getFileName(9)
+        val result = StringBuilder()
+        val kotlinvalue = StreamProcessing(filename)::processPart2
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(StreamProcessingScala.solvePart2(filename).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun knotHashPart1(): String {
+        val filename = getFileName(10)
+        val result = StringBuilder()
+        val kotlinvalue = KnotHash(filename)::processPart1
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue(256))
+            .append(", Scala: ")
+            .append(KnotHashScala.solvePart1(filename, 256).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun knotHashPart2(): String {
+        val filename = getFileName(10)
+        val result = StringBuilder()
+        val kotlinvalue = KnotHash(filename)::processPart2
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(KnotHashScala.solvePart2(filename).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun diskDefragmentationPart1(): String {
+        val filename = getFileName(14)
+        val result = StringBuilder()
+        val kotlinvalue = DiskDefragmentation(filename)::processPart1
+
+            result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(DiskDefragmentationScala.solvePart1(filename).toString())
+
+        return result
+            .toString()
+    }
+
+    private fun diskDefragmentationPart2(): String {
+        val filename = getFileName(14)
+        val result = StringBuilder()
+        val kotlinvalue = DiskDefragmentation(filename)::processPart2
+
+        result
+            .append("Kotlin: ")
+            .append(kotlinvalue())
+            .append(", Scala: ")
+            .append(DiskDefragmentationScala.solvePart2(filename).toString())
+
+        return result
+            .toString()
     }
 
     private fun permutationPromenadePart1(): String {
