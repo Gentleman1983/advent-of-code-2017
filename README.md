@@ -25,17 +25,17 @@ To run all solutions, simply run `./gradlew run`. If you want to run the solutio
 | 1       | ⭐ ![Java](img/java.png)                               | ⭐ ![Java](img/java.png)                               |
 | 2       | ⭐ ![Java](img/java.png)                               | ⭐ ![Java](img/java.png)                               |
 | 3       | ⭐ ![Java](img/java.png)                               | ⭐ ![Java](img/java.png)                               |
-| 4       | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  |
-| 5       | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  |
-| 6       | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  |
-| 7       | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  |
-| 8       | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  |
-| 9       | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  |
-| 10      | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  |
+| 4       | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  |
+| 5       | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  |
+| 6       | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  |
+| 7       | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  |
+| 8       | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  |
+| 9       | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  |
+| 10      | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  |
 | 11      | ⭐ ![Java](img/java.png)                               | ⭐ ![Java](img/java.png)                               |
 | 12      | ⭐ ![Java](img/java.png)                               | ⭐ ![Java](img/java.png)                               |
 | 13      | ⭐ ![Java](img/java.png)                               | ⭐ ![Java](img/java.png)                               |
-| 14      | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png), ![Scala](img/scala.png)  |
+| 14      | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  | ⭐ ![Kotlin](img/kotlin.png) ![Scala](img/scala.png)  |
 | 15      | ⭐ ![Java](img/java.png)                               | ⭐ ![Java](img/java.png)                               |
 | 16      | ⭐ ![Java](img/java.png)                               | ⭐ ![Java](img/java.png)                               |
 | 17      | ⭐ ![Java](img/java.png)                               | ⭐ ![Java](img/java.png)                               |
